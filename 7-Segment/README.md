@@ -35,10 +35,26 @@ void writeArduinoOn7Segment() {
   lc.setRow(0,6,0x05);        //r
   lc.setChar(0,5,'d',false);  //d
   lc.setRow(0,4,0x1c);        //u
-  lc.setRow(0,3,B00010000);   //i
+  lc.setRow(0,3,B00010000);   //i   lc.setRow(0,3,0x10);
   lc.setRow(0,2,0x15);        //n
   lc.setRow(0,1,0x1D);        //o
   delay(delaytime+5000);
   lc.clearDisplay(0);
 } 
+
+
+ -	     A
+| |   	F B
+ -	     G
+| |   	E C
+ - .	   D DP
+
+D7 D6 D5 D4 D3 D2 D1 D0
+DP A  B  C  D  E  F  G
+
+全亮 0xff
+.  0x80
+1  0x30
+6  0x5f
+U  0x3e
 ```
