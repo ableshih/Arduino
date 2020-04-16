@@ -31,21 +31,14 @@ lc.clearDisplay(0);清除
 
 Arduino
 void writeArduinoOn7Segment() {
-  lc.setChar(0,7,'a',false);
-  //delay(delaytime);
-  lc.setRow(0,6,0x05);
-  //delay(delaytime);
-  lc.setChar(0,5,'d',false);
-  //delay(delaytime);
-  lc.setRow(0,4,0x1c);
-  //delay(delaytime);
-  lc.setRow(0,3,B00010000);
-  //delay(delaytime);
-  lc.setRow(0,2,0x15);
-  //delay(delaytime);
-  lc.setRow(0,1,0x1D);
+  lc.setChar(0,7,'a',false);  //A
+  lc.setRow(0,6,0x05);        //r
+  lc.setChar(0,5,'d',false);  //d
+  lc.setRow(0,4,0x1c);        //u
+  lc.setRow(0,3,B00010000);   //i
+  lc.setRow(0,2,0x15);        //n
+  lc.setRow(0,1,0x1D);        //o
   delay(delaytime+5000);
   lc.clearDisplay(0);
-  delay(delaytime);
 } 
 ```
