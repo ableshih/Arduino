@@ -1,7 +1,7 @@
 
-MAX7219 4x2
+# MAX7219 4x2
 
-
+```
 硬體	UNO
 5V	5V
 GND	GND
@@ -21,7 +21,7 @@ a b c d e f g h i j k l m n o p q r s t u v w x y z
 A v v v E F x H x x x L x v v P x x x x x x x x x x
 
 LedControl lc=LedControl(12,11,10,1);DIN,CLK,CS,有幾顆IC
-```
+
 #include "LedControl.h"
 
 lc.setChar(0,7,'0',false);第一個，第8位顯
