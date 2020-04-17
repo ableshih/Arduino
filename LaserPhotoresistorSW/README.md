@@ -1,4 +1,6 @@
-LaserPhotoresistorSW
+# LaserPhotoresistorSW
+# 雷射光敏電阻開關
+
 ```
 UNO Photoresistor 
 A0  D0            
