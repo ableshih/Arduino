@@ -1,5 +1,5 @@
 LaserPhotoresistorSW
-
+```
 UNO Photoresistor 
 A0  D0            
 
@@ -26,6 +26,6 @@ https://goods.ruten.com.tw/item/show?21512663413420
 https://goods.ruten.com.tw/item/show?21838681278936
 
 輸入電壓: 5V
-
+```
 
 
