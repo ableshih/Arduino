@@ -6,6 +6,13 @@ A4    SDA
 A5    SCL
 NC
 GND   GND
+
+
+當 lostPower 成立才會以編譯日期時間
+if (rtc.lostPower())
+
+rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
+
 */
 // Include the libraries:
 #include "RTClib.h"
